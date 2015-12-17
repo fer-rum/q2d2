@@ -3,12 +3,16 @@
 
 #include "circuit_global.h"
 
+#include <QObject>
+
 namespace q2d2 {
 
-class CIRCUITSHARED_EXPORT Circuit {
+class CIRCUITSHARED_EXPORT Circuit :
+    public QObject {
+    Q_OBJECT
 
 public:
-    Circuit();
+    explicit Circuit(QObject* parent, QString name);
 };
 } // namespace q2d2
 
