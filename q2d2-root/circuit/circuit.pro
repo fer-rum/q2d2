@@ -5,16 +5,24 @@
 #-------------------------------------------------
 
 QT       -= gui
+CONFIG += c++11
 
 TARGET = circuit
 TEMPLATE = lib
-
 DEFINES += CIRCUIT_LIBRARY
 
-SOURCES += Circuit.cpp
+INCLUDEPATH += $$PWD/include \
+    $$PWD/src
 
-HEADERS += Circuit.h\
-        circuit_global.h
+MOC_DIR = $$PWD/moc
+OBJECTS_DIR = $$PWD/objects
+
+SOURCES += \
+    src/Circuit.cpp
+
+HEADERS += \
+    include/Circuit.h\
+    include/circuit_global.h
 
 unix {
     target.path = /usr/lib
