@@ -1,13 +1,15 @@
-#ifndef CIRCUIT_H
-#define CIRCUIT_H
+#ifndef Q2D2_CIRCUIT_H
+#define Q2D2_CIRCUIT_H
 
 #include "circuit_global.h"
 
-class CIRCUITSHARED_EXPORT Circuit
-{
+namespace q2d2 {
+
+class CIRCUITSHARED_EXPORT Circuit {
 
 public:
     Circuit();
 };
+} // namespace q2d2
 
-#endif // CIRCUIT_H
+#endif // Q2D2_CIRCUIT_H
