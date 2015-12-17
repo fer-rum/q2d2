@@ -4,6 +4,7 @@
 #include "circuit_global.h"
 
 #include <QObject>
+#include <QString>
 
 namespace q2d2 {
 

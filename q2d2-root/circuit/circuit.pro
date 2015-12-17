@@ -18,11 +18,13 @@ MOC_DIR = $$PWD/moc
 OBJECTS_DIR = $$PWD/objects
 
 SOURCES += \
-    src/Circuit.cpp
+    src/Circuit.cpp \
+    src/CircuitElement.cpp
 
 HEADERS += \
     include/Circuit.h\
-    include/circuit_global.h
+    include/circuit_global.h \
+    include/CircuitElement.h
 
 unix {
     target.path = /usr/lib
