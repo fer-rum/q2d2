@@ -14,7 +14,12 @@ class CIRCUITSHARED_EXPORT CircuitElement :
     Q_OBJECT
 
 public:
+    explicit CircuitElement(Circuit *parent);
     explicit CircuitElement(Circuit *parent, QString name);
+
+    Circuit* parent() const {
+        return qobject_cast<Circuit*>(parent());
+    }
 
 signals:
 

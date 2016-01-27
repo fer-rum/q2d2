@@ -14,6 +14,8 @@ class CIRCUITSHARED_EXPORT Circuit :
 
 public:
     explicit Circuit(QObject* parent, QString name);
+
+    // TODO add + remove circuit elements
 };
 } // namespace q2d2
 
